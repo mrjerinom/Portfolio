@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio loop id="bg-music">
+        <source src="djlofi-pixel-dreams-259187.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="back">
+        <canvas id="starCanvas"></canvas>
+        <nav>
+            <i id="mute" class="fa-solid fa-volume-xmark"></i>
+        </nav>
+
+        <div class="circle"></div>
+        <h1>Hey! I am Jazz :)</h1>
+        <p id="role">Front-End Developer</p>
+
+        <div class="card">
+            <p id="yea">SELECT YOUR DESTINATION</p>
+            <hr id="destination">
+            <div id="content">
+                <div id="about">
+                    <i class="fa-solid fa-circle-info icon"></i>
+                    <p class="text">About</p>
+                </div>
+                <div id="project">
+                    <i class="fa-solid fa-briefcase icon"></i>
+                    <p class="text">Projects</p>
+                </div>
+                <div id="contact">
+                    <i class="fa-solid fa-envelope icon"></i>
+                    <p class="text">Contact</p>
+                </div>
+                <div id="tool">
+                    <i class="fa-solid fa-hammer icon"></i>
+                    <p class="text">Tools</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay">
+        <div id="popup">
+            <button id="close-btn"><i class="fa-solid fa-xmark"></i></button>
+
+            <!-- ABOUT -->
+            <div class="popup-content" id="popup-about" style="display:none">
+                <h2>Who am I?</h2><hr>
+                <p class="textBelow">I’m a passionate Frontend Web Developer focused on building clean, responsive, and user-friendly websites. I enjoy turning ideas into interactive digital experiences using modern technologies like HTML, CSS, JavaScript, and frameworks like React.</p>
+            </div>
+
+            <!-- PROJECTS -->
+            <div class="popup-content" id="popup-projects" style="display:none">
+                <h2>Projects</h2><hr>
+                <div class="popup-icons">
+                    <div class="popup-item">
+                        <i class="fa-solid fa-globe popup-icon"></i>
+                        <p>This Portfolio</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="popup-content" id="popup-contact" style="display:none">
+                <h2>Contact</h2><hr>
+                <div class="popup-icons">
+                    <div class="popup-item">
+                        <a href="https://reddit.com/u/MrJerinom" target="_blank">
+                            <i class="fa-brands fa-reddit popup-icon" style="color:#FF4500"></i>
+                            <p>Reddit</p>
+                        </a>
+                    </div>
+                    <div class="popup-item">
+                        <a href="https://t.me/kcsfgMlemk" target="_blank">
+                            <i class="fa-brands fa-telegram popup-icon" style="color:#2AABEE"></i>
+                            <p>Telegram</p>
+                        </a>
+                    </div>
+                    <div class="popup-item">
+                        <a href="https://wa.me/9663383578" target="_blank">
+                            <i class="fa-brands fa-whatsapp popup-icon" style="color:#25D366"></i>
+                            <p>WhatsApp</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TOOLS -->
+            <div class="popup-content" id="popup-tools" style="display:none">
+                <h2>Tools</h2><hr>
+                <div class="popup-icons">
+                    <div class="popup-item">
+                        <i class="fa-brands fa-html5 popup-icon" style="color:#E34F26"></i>
+                        <p>HTML</p>
+                    </div>
+                    <div class="popup-item">
+                        <i class="fa-brands fa-css3-alt popup-icon" style="color:#1572B6"></i>
+                        <p>CSS</p>
+                    </div>
+                    <div class="popup-item">
+                        <i class="fa-brands fa-js popup-icon" style="color:#F7DF1E"></i>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="popup-item">
+                        <i class="fa-brands fa-react popup-icon" style="color:#61DAFB"></i>
+                        <p>React</p>
+                    </div>
+                    <div class="popup-item">
+                        <i class="fa-brands fa-git-alt popup-icon" style="color:#F05032"></i>
+                        <p>Git</p>
+                    </div>
+                    <div class="popup-item">
+                        <i class="fa-brands fa-github popup-icon" style="color:white"></i>
+                        <p>GitHub</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
